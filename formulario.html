@@ -1,21 +1,78 @@
 <html>
     <head>
-        <title>Formulário</title>
+        <title>Site de Solon</title>
+        <style>
+            body{
+                margin: 10;
+            }
+            /* isso é uma classe */
+            .img-logo{
+                width: 100px;
+                height: 100px;
+                float: left;
+            }
+            /* isso é uma tag */
+            header{
+                background-color: #BB5522;
+                color: #FFFFFF;
+                height: 200px;
+                padding-left: 20px;
+                padding-top: 20px;
+                padding-right: 20px;
+            }
+
+            .form{
+                background-color: hsl(20, 69%, 43%);
+                padding-left: 10px;
+            }
+
+            .botao-form{
+                margin: 5px;
+                background-color: bisque;
+                color: black;
+                padding: 10px;
+                font-size: large;
+            }
+            /* inputs dentro do formulário (não é uma classe, não pode ser reaproveitado) */
+            form input, textarea{
+                background-color: #ca844c;
+                color: white;
+                border: 0;
+            }
+
+            .branco{
+                color:white;
+            }
+
+            /* isso é um id */
+            #id{
+                
+            }
+        
+        </style>
     </head>
-    <body>
-        <h2>Formulário de contato</h2>telefone
+    <body style="background-color: #ca844c">
+        <header>
+            <img class="img-logo" src="https://cdn-icons-png.flaticon.com/512/8/8331.png" alt="Logotipo do site">
+            <h1>Site de Solon</h1>
+            <h3>Projeto de Front-End</h3>
+        </header>
+        <div class="form branco">
+        <h2>Formulário de contato</h2>
         <form action="obrigado.html" method="post">
             <fieldset>
+                <legend>Dados Pessoais</legend>
                 <label>Digite o seu nome:</label>
                 <input type="text" name="nome" required placeholder="Coloque seu nome"/><br>
                 <label>Data de nascimento</label>
                 <input type="date" name="data" required placeholder="Coloque a data do seu nascimento"/><br>
                 <label>Seu telefone:</label>
-                <input type="tel" nome="telefone" required placeholder="Coloque seu telefone"/><br>
+                <input type="tel" name="telefone" required placeholder="Coloque seu telefone"/><br>
                 <label>E-mail:</label>
                 <input type="email" name="email" required placeholder="Coloque seu email"/><br>
             </fieldset>
             <fieldset>
+                <legend>Sobre seu curso</legend>
                 <label>Avalie nosso site:</label>
                 <input type="range" min="0" max="5"/><br>
                 <label>Escolha o seu curso</label>
@@ -32,7 +89,8 @@
                 <label>Mensagem/Comentário:</label>
                 <textarea name="comentario" placeholder="Coloque seu comentário aqui."></textarea>
             </fieldset>
-            <button value="Enviar">Enviar</button>
+            </div>
+            <button class="botao-form" type="submit">Enviar</button>
         </form>
     </body>
 </html>

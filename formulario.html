@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <title>Solon's Open</title>
+        <link href="estilo.css" rel="stylesheet">
+    </head>
+    <body style="background-color: #ca844c">
+        <header>
+            <img class="img-logo" src="https://cdn-icons-png.flaticon.com/512/8/8331.png" alt="Logotipo do site">
+            <h1>Solon's Open</h1>
+            <h3>Torneio Amador de Tênis</h3>
+        </header>
+        <p>
+		<u><b>Solon's Open</b></u> é um torneio de tênis amador que reúne tenistas da Paraíba em uma competição de alto nível,
+            marcada por disputas, competitividade e paixão pelo esporte. Entre em quadra, desafie seus limites e faça parte dessa experiência.</p>
+		<br>
+		<div class="container-imagem-tabela">
+            <div>
+			    <img class="img-inicial" src="https://tse3.mm.bing.net/th/id/OIP.j6MIH0HkdkrUeewC_d8aeQHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Imagem Alcaraz">
+            </div>
+            <div style="height: 340px; width:460px; background-color: #BB5522;">
+			    <h3 style="text-align: center;">Tabela de Premiação</h3>
+			    <table border="1" style="width: 100%; border-collapse: collapse;">
+			    <thead>
+			    <tr style="text-align: center;">
+				    <th>Classe</th>
+				    <th>Prêmio</th>
+			    </tr>
+			    </thead>
+			    <tbody>
+				    <tr style="text-align: center;">
+					    <td>Campeão 1ª Classe</td>
+					    <td>R$1,000.00, troféu e medalha</td>
+				    </tr>
+				    <tr style="text-align: center;">
+					    <td>Vice-Campeão 1ª Classe</td>
+					    <td>R$700, troféu e medalha</td>
+				    </tr>
+				    <tr style="text-align: center;">
+					    <td>Campeão 2ª Classe</td>
+					    <td>R$500, troféu e medalha</td>
+				    </tr>
+				    <tr style="text-align: center;">
+					    <td>Vice-Campeão 2ª Classe</td>
+					    <td>R$300, troféu e medalha</td>
+				    </tr>
+				    <tr style="text-align: center;">
+					    <td>Campeão 3 ªClasse</td>
+					    <td>R$200, troféu e medalha</td>
+				    </tr>
+				    <tr style="text-align: center;">
+					    <td>Vice-Campeão 3ª Classe</td>
+					    <td>R$100, troféu e medalha</td>
+				    </tr>
+                    <tr style="text-align: center;">
+					    <td>Campeão 4ª Classe</td>
+					    <td>Troféu e medalha</td>
+				    </tr>
+				    <tr style="text-align: center;">
+					    <td>Vice-Campeão 4ª Classe</td>
+					    <td>Troféu e medalha</td>
+				    </tr>
+                    <tr style="text-align: center;">
+					    <td>Campeão 5ª Classe</td>
+					    <td>Troféu e medalha</td>
+				    </tr> 
+                    <tr style="text-align: center;">
+					    <td>Vice-Campeão 5ªClasse</td>
+					    <td>Troféu e medalha</td>
+				    </tr>
+                    <tr style="text-align: center;">
+					    <td>Campeão Iniciante</td>
+					    <td>Troféu e medalha</td>
+				    </tr>
+                    <tr style="text-align: center;">
+					    <td>Vice-Campeão Iniciante</td>
+					    <td>Troféu e medalha</td>
+				    </tr> 
+                </tbody>
+			    </table>
+            </div>
+		</div>
+        <div class="form branco">
+        <h2>Formulário de Inscrição</h2>
+        <form action="obrigado.html" method="post">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label>Digite o seu nome:</label>
+                <input type="text" name="nome" required placeholder="Coloque seu nome"/><br>
+                <label>Data de nascimento</label>
+                <input type="date" name="data" required placeholder="Coloque a data do seu nascimento"/><br>
+                <label>Seu telefone:</label>
+                <input type="tel" name="telefone" required placeholder="Coloque seu telefone"/><br>
+                <label>E-mail:</label>
+                <input type="email" name="email" required placeholder="Coloque seu email"/><br>
+            </fieldset>
+            <fieldset>
+                <legend>Defina sua inscrição</legend>
+                <label>Categoria:</label>
+                <input type="radio" name="categoria" value="Geral">
+                <label>Geral</label>
+                <input type="radio" name="categoria" value="Masculino">
+                <label>Masculino</label>
+                <input type="radio" name="categoria" value="Feminino">
+                <label>Feminino</label><br>
+                <label>Escolha sua classe:</label>
+                <input type="radio" name="classe" value="1ª Classe">
+                <label>1ª Classe</label>
+                <input type="radio" name="classe" value="2ª Classe">
+                <label>2ª Classe</label>
+                <input type="radio" name="classe" value="3ª Classe">
+                <label>3ª Classe</label>
+                <input type="radio" name="classe" value="4ª Classe">
+                <label>4ª Classe</label>
+                <input type="radio" name="classe" value="5ª Classe">
+                <label>5ª Classe</label>
+                <input type="radio" name="classe" value="Iniciante">
+                <label>Iniciante</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Feedback</legend>
+                <label>Avalie nosso site:</label>
+                <input type="range" min="0" max="5"/><br>
+                <label>Mensagem/Comentário:</label>
+                <textarea name="comentario" placeholder="Coloque seu comentário aqui."></textarea>
+            </fieldset>
+            </div>
+            <button class="botao-form" type="submit">Enviar</button>
+            <div class="rodape">
+                Site voltado para para inscrição no torneio amador de tênis
+            </div>
+        </form>
+    </body>
+</html>

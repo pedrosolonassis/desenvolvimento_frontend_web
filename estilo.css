@@ -1,0 +1,65 @@
+body{
+    margin: 10;
+ }
+ /* isso é uma classe */
+.img-logo{
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+ /* isso é uma tag */
+header{
+    background-color: #BB5522;
+    color: #FFFFFF;
+    height: 110px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.form{
+    background-color: hsl(20, 69%, 43%);
+    padding-left: 10px;
+}
+
+.botao-form{
+    margin: 5px;
+    background-color: bisque;
+    color: black;
+    padding: 10px;
+    font-size: large;
+}
+/* inputs dentro do formulário (não é uma classe, não pode ser reaproveitado) */
+form input, textarea{
+    background-color: #ca844c;
+    color: white;
+    border: 0;
+}
+
+.branco{
+    color:white;
+}
+
+.rodape{
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+/* isso é um id */
+#id{
+                
+}
+
+.imagem-inicial{
+    width: 300px;
+    height: 300px;
+    text-align: right;
+}
+
+.container-imagem-tabela {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}

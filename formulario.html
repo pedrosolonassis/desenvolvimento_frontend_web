@@ -1,64 +1,83 @@
 <html>
     <head>
-        <title>Site de Solon</title>
-        <style>
-            body{
-                margin: 10;
-            }
-            /* isso é uma classe */
-            .img-logo{
-                width: 100px;
-                height: 100px;
-                float: left;
-            }
-            /* isso é uma tag */
-            header{
-                background-color: #BB5522;
-                color: #FFFFFF;
-                height: 200px;
-                padding-left: 20px;
-                padding-top: 20px;
-                padding-right: 20px;
-            }
-
-            .form{
-                background-color: hsl(20, 69%, 43%);
-                padding-left: 10px;
-            }
-
-            .botao-form{
-                margin: 5px;
-                background-color: bisque;
-                color: black;
-                padding: 10px;
-                font-size: large;
-            }
-            /* inputs dentro do formulário (não é uma classe, não pode ser reaproveitado) */
-            form input, textarea{
-                background-color: #ca844c;
-                color: white;
-                border: 0;
-            }
-
-            .branco{
-                color:white;
-            }
-
-            /* isso é um id */
-            #id{
-                
-            }
-        
-        </style>
+        <title>Solon's Open</title>
+        <link href="estilo.css" rel="stylesheet">
     </head>
     <body style="background-color: #ca844c">
         <header>
             <img class="img-logo" src="https://cdn-icons-png.flaticon.com/512/8/8331.png" alt="Logotipo do site">
-            <h1>Site de Solon</h1>
-            <h3>Projeto de Front-End</h3>
+            <h1>Solon's Open</h1>
+            <h3>Torneio Amador de Tênis</h3>
         </header>
+        <p>
+		<u><b>Solon's Open</b></u> é um torneio de tênis amador que reúne tenistas da Paraíba em uma competição de alto nível,
+            marcada por disputas, competitividade e paixão pelo esporte. Entre em quadra, desafie seus limites e faça parte dessa experiência.</p>
+		<br>
+		<div>
+			<img class="img-inicial" src="https://tse3.mm.bing.net/th/id/OIP.j6MIH0HkdkrUeewC_d8aeQHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Imagem Alcaraz">
+        </div>
+        <div style="height: 300px; width:450px; background-color: #BB5522;">
+			<h3 style="text-align: center;">Tabela de Premiação</h3>
+			<table border="2">
+			<thead>
+			<tr>
+				<th>Classe</th>
+				<th>Prêmio</th>
+			</tr>
+			</thead>
+			<tbody>
+				<tr style="text-align: center;">
+					<td>Campeão 1ª Classe</td>
+					<td>R$1,000.00, troféu e medalha</td>
+				</tr>
+				<tr style="text-align: center;">
+					<td>Vice-Campeão 1ª Classe</td>
+					<td>R$700, troféu e medalha</td>
+				</tr>
+				<tr style="text-align: center;">
+					<td>Campeão 2ª Classe</td>
+					<td>R$500, troféu e medalha</td>
+				</tr>
+				<tr style="text-align: center;">
+					<td>Vice-Campeão 2ª Classe</td>
+					<td>R$300, troféu e medalha</td>
+				</tr>
+				<tr style="text-align: center;">
+					<td>Campeão 3 ªClasse</td>
+					<td>R$200, troféu e medalha</td>
+				</tr>
+				<tr style="text-align: center;">
+					<td>Vice-Campeão 3ª Classe</td>
+					<td>R$100, troféu e medalha</td>
+				</tr>
+                <tr style="text-align: center;">
+					<td>Campeão 4ª Classe</td>
+					<td>Troféu e medalha</td>
+				</tr>
+				<tr style="text-align: center;">
+					<td>Vice-Campeão 4ª Classe</td>
+					<td>Troféu e medalha</td>
+				</tr>
+                <tr style="text-align: center;">
+					<td>Campeão 5ª Classe</td>
+					<td>Troféu e medalha</td>
+				</tr> 
+                <tr style="text-align: center;">
+					<td>Vice-Campeão 5ªClasse</td>
+					<td>Troféu e medalha</td>
+				</tr>
+                <tr style="text-align: center;">
+					<td>Campeão Iniciante</td>
+					<td>Troféu e medalha</td>
+				</tr>
+                <tr style="text-align: center;">
+					<td>Vice-Campeão Iniciante</td>
+					<td>Troféu e medalha</td>
+				</tr> 
+			</table>
+		</div>
         <div class="form branco">
-        <h2>Formulário de contato</h2>
+        <h2>Formulário de Inscrição</h2>
         <form action="obrigado.html" method="post">
             <fieldset>
                 <legend>Dados Pessoais</legend>
@@ -72,25 +91,45 @@
                 <input type="email" name="email" required placeholder="Coloque seu email"/><br>
             </fieldset>
             <fieldset>
-                <legend>Sobre seu curso</legend>
+                <legend>Defina sua inscrição</legend>
+                <label>Categoria:</label>
+                <input type="radio" name="categoria" value="Geral">
+                <label>Geral</label>
+                <input type="radio" name="categoria" value="Masculino">
+                <label>Masculino</label>
+                <input type="radio" name="categoria" value="Feminino">
+                <label>Feminino</label><br>
+                <label>Escolha sua classe:</label>
+                <input type="radio" name="classe" value="1ª Classe">
+                <label>1ª Classe</label>
+                <input type="radio" name="classe" value="2ª Classe">
+                <label>2ª Classe</label>
+                <input type="radio" name="classe" value="3ª Classe">
+                <label>3ª Classe</label>
+                <input type="radio" name="classe" value="4ª Classe">
+                <label>4ª Classe</label>
+                <input type="radio" name="classe" value="5ª Classe">
+                <label>5ª Classe</label>
+                <input type="radio" name="classe" value="Iniciante">
+                <label>Iniciante</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Feedback</legend>
                 <label>Avalie nosso site:</label>
                 <input type="range" min="0" max="5"/><br>
-                <label>Escolha o seu curso</label>
-                <input type="radio" name="curso" value="ADS">
-                <label>ADS</label>
-                <input type="radio" name="curso" value="Ciência da Computação">
-                <label>Ciência da Computação</label>
-                <input type="radio" name="curso" value="Eng. Software">
-                <label>Engenharia de Software</label>
-                <input type="radio" name="curso" value="Eng. Computação">
-                <label>Engenharia da Computação</label>
-                <input type="radio" name="curso" value="Ciência de Dados">
-                <label>Ciência de Dados</label><br>
                 <label>Mensagem/Comentário:</label>
                 <textarea name="comentario" placeholder="Coloque seu comentário aqui."></textarea>
             </fieldset>
             </div>
             <button class="botao-form" type="submit">Enviar</button>
+            <div class="rodape"
+                Site voltado para para inscrição no torneio amador de tênis
+            </div>
         </form>
+        <footer>
+		<center>
+			<div>Site voltado para para inscrição no torneio amador de tênis</div>
+        </center>
+ 	</footer>
     </body>
 </html>

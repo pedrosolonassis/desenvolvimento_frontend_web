@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tennis HUB</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+        <link href="estilo.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <!-- ===== PARTE 1: CABEÇALHO ===== -->
+        <header class="topo">
+            <a class="logo" href="#inicio">Tennis HUB</a>
+            <nav class="menu">
+                <a href="#ligas">Ligas</a>
+                <a href="#torneios">Torneios</a>
+                <a href="#amistosos">Amistosos</a>
+                <a href="#analise">Análise</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- ===== PARTE 1: HERO ===== -->
+            <section class="hero" id="inicio">
+                <div class="hero-texto">
+                    <h1>Sua quadra, seus rivais, sua liga.</h1>
+                    <p>Encontre jogadores, marque amistosos, dispute torneios e acompanhe seu ranking numa rede feita para quem joga tênis.</p>
+                    <a class="botao" href="#ligas">Ver ligas</a>
+                    <a class="botao botao-claro" href="#ligas">Criar minha liga</a>
+                </div>
+
+                <!-- placar de exemplo, só com HTML e CSS -->
+                <div class="placar">
+                    <p class="placar-titulo">Amistoso em João Pessoa</p>
+                    <table>
+                        <tr>
+                            <td class="placar-nome">Marina Souza</td>
+                            <td>6</td><td>4</td><td class="placar-vencedor">6</td>
+                        </tr>
+                        <tr>
+                            <td class="placar-nome">Lucas Pereira</td>
+                            <td>3</td><td>6</td><td>4</td>
+                        </tr>
+                    </table>
+                    <p class="placar-rodape">Finalizado em 3 sets</p>
+                </div>
+            </section>
+
+            <!-- ===== PARTE 1: LIGAS E RANKING ===== -->
+            <section class="secao" id="ligas">
+                <h2>Ligas e rankings</h2>
+                <p class="secao-texto">
+                    Cada liga é criada por um jogador, com as suas próprias regras.
+                    Só as partidas da liga valem pontos: os amistosos não alteram o ranking.
+                </p>
+
+                <div class="container-ligas">
+                    <div class="liga">
+                        <h3>Liga Saibro JP</h3>
+                        <p>12 jogadores</p>
+                        <p>Criada por Marina Souza</p>
+                    </div>
+                    <div class="liga">
+                        <h3>Liga Clube da Praia</h3>
+                        <p>8 jogadores</p>
+                        <p>Criada por Rafael Lima</p>
+                    </div>
+                    <div class="liga liga-nova">
+                        <h3>Nova liga</h3>
+                        <p>Defina o nome, os jogadores e as regras.</p>
+                    </div>
+                </div>
+
+                <h3 class="tabela-titulo">Classificação da Liga Saibro JP</h3>
+                <div class="tabela-rolagem">
+                    <table class="ranking">
+                        <thead>
+                            <tr>
+                                <th>Pos.</th>
+                                <th>Jogador</th>
+                                <th>J</th>
+                                <th>V</th>
+                                <th>D</th>
+                                <th>Pts</th>
+                                <th>Últimos 5</th>
+                                <th>Variação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td><td>Pedro Solon</td><td>8</td><td>7</td><td>1</td><td>21</td>
+                                <td><span class="v">V</span><span class="v">V</span><span class="v">V</span><span class="d">D</span><span class="v">V</span></td>
+                                <td class="sobe">▲ 1</td>
+                            </tr>
+                            <tr>
+                                <td>2</td><td>Marcos Alves</td><td>8</td><td>6</td><td>2</td><td>18</td>
+                                <td><span class="v">V</span><span class="d">D</span><span class="v">V</span><span class="v">V</span><span class="v">V</span></td>
+                                <td>–</td>
+                            </tr>
+                            <tr>
+                                <td>3</td><td>Rafael Lima</td><td>7</td><td>5</td><td>2</td><td>15</td>
+                                <td><span class="d">D</span><span class="v">V</span><span class="v">V</span><span class="v">V</span><span class="d">D</span></td>
+                                <td class="desce">▼ 1</td>
+                            </tr>
+                            <tr>
+                                <td>4</td><td>Camila Rocha</td><td>8</td><td>4</td><td>4</td><td>12</td>
+                                <td><span class="v">V</span><span class="d">D</span><span class="d">D</span><span class="v">V</span><span class="v">V</span></td>
+                                <td class="sobe">▲ 2</td>
+                            </tr>
+                            <tr>
+                                <td>5</td><td>Bruno Alves</td><td>7</td><td>2</td><td>5</td><td>6</td>
+                                <td><span class="d">D</span><span class="d">D</span><span class="v">V</span><span class="d">D</span><span class="d">D</span></td>
+                                <td class="desce">▼ 1</td>
+                            </tr>
+                            <tr>
+                                <td>6</td><td>Ana Beatriz</td><td>6</td><td>1</td><td>5</td><td>3</td>
+                                <td><span class="d">D</span><span class="d">D</span><span class="d">D</span><span class="v">V</span><span class="d">D</span></td>
+                                <td>–</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="legenda">J = jogos, V = vitórias, D = derrotas. Regra desta liga: 3 pontos por vitória.</p>
+            </section>
+        </main>
+
+    </body>
+</html>

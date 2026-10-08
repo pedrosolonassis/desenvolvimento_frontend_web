@@ -1,0 +1,258 @@
+/* ===== CORES DO PROJETO (mude aqui e o site inteiro muda) ===== */
+:root{
+    --laranja: #E0601F;         /* meio termo entre o terroso e o vibrante */
+    --laranja-escuro: #B8481A;
+    --laranja-claro: #FCE6D8;
+    --verde: #1E4A3A;           /* verde escuro, inspirado nos painéis de Roland Garros */
+    --texto: #2A211C;
+    --branco: #FFFFFF;
+}
+
+body{
+    margin: 0;
+    font-family: "Source Sans 3", Arial, sans-serif;
+    color: var(--texto);
+    background-color: #FFFBF8;
+    line-height: 1.5;
+}
+
+h1, h2, h3{
+    font-family: "Barlow Condensed", "Arial Narrow", sans-serif;
+    line-height: 1.1;
+    margin: 0 0 10px 0;
+}
+
+/* ===== CABEÇALHO ===== */
+.topo{
+    background-color: var(--laranja);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 30px;
+}
+
+.logo{
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--branco);
+    text-decoration: none;
+}
+
+.menu a{
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 22px;
+    padding-bottom: 4px;
+}
+
+.menu a:hover{
+    border-bottom: 3px solid var(--branco);
+}
+
+a:focus-visible{
+    outline: 3px solid var(--verde);
+    outline-offset: 3px;
+}
+
+/* ===== HERO ===== */
+.hero{
+    background-color: var(--laranja);
+    color: var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 50px 30px 70px 30px;
+}
+
+.hero-texto{
+    max-width: 520px;
+}
+
+.hero h1{
+    font-size: 64px;
+}
+
+.hero p{
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+/* ===== BOTÕES ===== */
+.botao{
+    display: inline-block;
+    background-color: var(--verde);
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 22px;
+    border-radius: 6px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.botao-claro{
+    background-color: var(--branco);
+    color: var(--laranja-escuro);
+}
+
+/* ===== PLACAR (hero) ===== */
+.placar{
+    background-color: var(--verde);
+    color: var(--branco);
+    padding: 20px 24px;
+    border-radius: 8px;
+    min-width: 300px;
+}
+
+.placar-titulo, .placar-rodape{
+    margin: 0;
+    font-size: 15px;
+}
+
+.placar table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 28px;
+}
+
+.placar td{
+    padding: 6px 10px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.placar .placar-nome{
+    text-align: left;
+    padding-left: 0;
+    font-size: 24px;
+}
+
+.placar-vencedor{
+    color: #FFC09A;
+    font-weight: 700;
+}
+
+/* ===== SEÇÕES ===== */
+.secao{
+    padding: 50px 30px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.secao h2{
+    font-size: 44px;
+    color: var(--laranja-escuro);
+}
+
+.secao-texto{
+    max-width: 640px;
+    font-size: 18px;
+}
+
+/* ===== CARTÕES DE LIGAS ===== */
+.container-ligas{
+    display: flex;
+    gap: 16px;
+    margin: 28px 0 40px 0;
+}
+
+.liga{
+    flex: 1;
+    background-color: var(--laranja-claro);
+    border-left: 6px solid var(--laranja);
+    padding: 16px 18px;
+    border-radius: 6px;
+}
+
+.liga h3{
+    font-size: 26px;
+    color: var(--verde);
+}
+
+.liga p{
+    margin: 2px 0;
+}
+
+.liga-nova{
+    background-color: transparent;
+    border: 2px dashed var(--laranja);
+}
+
+/* ===== TABELA DE RANKING ===== */
+.tabela-titulo{
+    font-size: 30px;
+    color: var(--verde);
+}
+
+.tabela-rolagem{
+    overflow-x: auto;
+}
+
+.ranking{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--branco);
+}
+
+.ranking th{
+    background-color: var(--verde);
+    color: var(--branco);
+    padding: 10px;
+    text-align: center;
+}
+
+.ranking td{
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid var(--laranja-claro);
+}
+
+/* nome do jogador alinhado à esquerda */
+.ranking th:nth-child(2), .ranking td:nth-child(2){
+    text-align: left;
+}
+
+/* destaca o líder */
+.ranking tbody tr:first-child{
+    background-color: var(--laranja-claro);
+    font-weight: 600;
+}
+
+/* sequência de resultados */
+.v, .d{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    margin: 0 1px;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--branco);
+}
+
+.v{ background-color: var(--verde); }
+.d{ background-color: #A8998F; }
+
+.sobe{ color: var(--verde); font-weight: 600; }
+.desce{ color: var(--laranja-escuro); font-weight: 600; }
+
+.legenda{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* ===== CELULAR ===== */
+@media (max-width: 700px){
+    .topo{ flex-direction: column; gap: 10px; }
+    .menu a{ margin: 0 10px; }
+    .hero{ flex-direction: column; align-items: flex-start; }
+    .hero h1{ font-size: 46px; }
+    .placar{ min-width: 0; width: 100%; box-sizing: border-box; }
+    .container-ligas{ flex-direction: column; }
+}

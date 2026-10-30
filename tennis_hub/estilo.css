@@ -5,22 +5,39 @@ body{
     color: #2A211C;
 }
 
-
 .pagina{
     display: grid;
     grid-template-areas:
         "topo"
+        "menu"
         "texto"
         "formulario"
         "rodape";
 }
 
-/* isso é uma tag */
 header{
     grid-area: topo;
     background-color: #E0601F;
     color: #FFFFFF;
     padding: 20px 30px;
+}
+
+.menu{
+    grid-area: menu;
+    background-color: #B8481A;
+    padding: 12px 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover{
+    text-decoration: underline;
 }
 
 .texto{
@@ -87,15 +104,25 @@ form input, textarea{
     background-color: #FCE6D8;
     color: #2A211C;
     border: 0;
+    padding: 8px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 4px;
 }
 
 .botao-form{
-    margin: 5px;
+    margin-top: 10px;
     background-color: #E0601F;
     color: #FFFFFF;
-    padding: 10px;
+    padding: 10px 20px;
     font-size: large;
     border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.botao-form:hover{
+    background-color: #B8481A;
 }
 
 .rodape{
